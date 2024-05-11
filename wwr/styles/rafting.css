@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap')
 body {
+    
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
     text-align: center;
     
-    .sedan-sc-regular {
+        .sedan-sc-regular {
         font-family: "Sedan SC", serif;
         font-weight: 400;
         font-style: normal;
-      }
+         }
 }
 
 :root {
@@ -28,14 +29,29 @@ body {
   }
 
 
-  
-hero {
+.content {
+    width: 10%; 
+    margin: 4 auto;
+}
+
+.hero {
     position: relative;
 }
 
 .hero img {
     display:block;
     width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+.hero p img{
+    display:block;
+    width: 20%;
     height: auto;
 }
 
@@ -48,6 +64,8 @@ hero {
     padding: 20px;
     background-color: var(--accent1-color);
   }
+
+
 p {
   padding: 25px;
 }
@@ -57,17 +75,37 @@ nav {
     display: flex;
   }
   
-  section {
+  .section {
     position: absolute;
   }
 
-  article {
+  .article {
+    position: absolute;
+    padding: 2px;
+  }
+.section img {
+
+    float: right;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 1rem;
+}
+  .h1 {
     position: absolute;
   }
 
-  h1 {
-    position: absolute;
+.box {
+    width: 80%; 
+    height: 100%; 
+    background-color: #5465FF; 
+    border: 1px solid #788BFF; 
+    margin: 0 10px;
+    
   }
+
   nav a {
     display: block;
     color: var(--nav-link-color);
@@ -82,4 +120,10 @@ nav {
   nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+  }
+
+  
+  .sociallinks{
+    align-items: center;
+    
   }
