@@ -4,6 +4,13 @@
     box-sizing: border-box;
   }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+
+
 body {
     font-size: 16px;
     font-family: "Montserrat", Arial, sans-serif;
@@ -15,22 +22,45 @@ body {
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    color: var(--nav-link-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a{
-    color: white;
-    padding: 10px;
     display: block;
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 h1 {
     color:black;
-    padding: .5rem;
+    padding: 1rem;
+    border-bottom: 2.5px solid rgb(0, 0, 0);
 }
 
+
 main {
-    max-width: 640px;
+    grid-column: 2/3;
+    margin: 1rem;
+    padding: 2px;
+    margin: 0 auto;
     
 }
 
@@ -50,27 +80,33 @@ p {
 }
 
 aside{
-    width:20rem;
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     margin:1rem;
     border: 1px solid #ffffff;
     padding: 1rem;
     background-color: hwb(251 0% 28%);
     color: hsl(0, 0%, 100%);
     text-align: center;
-    position:relative;
+   
+    
 }
 
 
 aside img {
     width: 200px;
     height: auto;
+   
 
 }
 
 aside h2{
     position: absolute;
-    top: 600px;
+    top: 508px;
     left: 150px;
+   
 }
 
 footer{
