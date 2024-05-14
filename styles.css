@@ -50,16 +50,21 @@ body {
 
 
 main {
-    grid-column: 2/3;
+    grid-column: 2;
     margin: 1rem;
     padding: 2px;
-    margin: 0 auto;
+
+    
     
 }
         h1 {
             color:black;
             padding: 1rem;
             border-bottom: 2.5px solid rgb(0, 0, 0);
+            max-width: 840px;
+            display: flex;
+            align-items: center;
+            
         }
 
         main img{
@@ -77,33 +82,34 @@ main {
             margin: 1rem;
         }
 
-        aside{
-            width: 20rem;
-            position: relative;
-            grid-column: 1/2;
-            grid-row: 1/2;
-            margin:1rem;
-            border: 1px solid #ffffff;
-            padding: 1rem;
-            background-color: hwb(251 0% 28%);
-            color: hsl(0, 0%, 100%);
-            text-align: center;
+ aside{
+        width: 20rem;
+        position: relative;
+        grid-column: 1;
+        grid-row: 1;
+        
+        margin:1rem;
+        border: 1px solid #ffffff;
+        padding: 1rem;
+        background-color: hwb(251 0% 28%);
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        align-items: center;
         
             
-        }
+        }       
 
 
                 aside img {
                     width: 200px;
                     height: auto;
-                
-
+                    
                 }
 
                 aside h2{
                     position: absolute;
-                    top: 508px;
-                    left: 150px;
+                    top: 20px;
+                    left: 80px;
                 
                 }
 
