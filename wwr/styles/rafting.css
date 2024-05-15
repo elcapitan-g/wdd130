@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
 :root {
     --primary-color: #5465FF;
@@ -88,7 +87,7 @@ nav {
 
 .content {
     width: 10%;
-    margin: 4 auto;
+    margin: auto;
 }
 
 .hero {
@@ -167,7 +166,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-height: auto;
+    height: auto;
     margin: auto;
     display: inline-block; 
     flex: 0 0 auto; 
